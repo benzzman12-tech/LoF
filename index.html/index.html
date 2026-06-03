@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Light of Asia School</title>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaM6tU8ZlX/VWcfYbOOl7+O3qNHbv5V9zzTtmI3UksdQRVvoxMfooAoRBv0z+8==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Khmer Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/CSS/style.css">
+
+
+</head>
+<body >
+ <!-- Header -->
+ <header class="site-header">
+  <div class="container header-wrapper">
+    <a class="brand" href="../index.html/index.html">
+      <img src="../src/logo/LOGO.gif" alt="Light of Asia School Logo" class="brand-logo" />
+    </a>
+
+    <!-- Hamburger toggle button -->
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+    <ul class="nav-list">
+      <li><a href="../index.html/index.html">ទំព័រដើម</a></li>
+      <li><a href="../index.html/about.html">អំពីយើង</a></li>
+      <li>
+        <a href="../subject/program.html">កម្មវិធីសិក្សា</a>
+       
+      </li>
+      <li><a href="../news/pagenews.html">ព័ត៍មាន &amp; ព្រឹត្តិការណ៍</a></li>
+      <li><a href="../index.html/contact.html">ការទំនាក់ទំនង</a></li>
+    </ul>
+  </div>
+</header>
+ <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <!-- LEFT -->
+      <div class="hero-copy">
+        <h1>
+          សាលារៀន ពន្លឺ អាស៊ី
+        </h1>
+        <p>
+          ក្នុងរយៈពេលជិត១០ឆ្នាំមកនេះ សាលារៀន ពន្លឺ អាស៊ីបានអភិវឌ្ឍន៍យ៉ាងឆាប់រហ័ស ហើយមានសាខាចំនួន៦ទីតាំង។ សាលាបន្តប្តេជ្ញាផ្តល់ការអប់រំមានគុណភាព
+          ដើម្បីបណ្តុះក្មេងជំនាន់ក្រោយ ឲ្យមានចំណេះដឹង វិន័យ និងគុណធម៌។
+        </p>
+        <div class="hero-actions">
+          <a class="btnn"  href="../index.html/contact.html">ទំនាក់ទំនង</a>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero-visual" id="heroVisual">
+        <!-- BUTTON -->
+        <button class="slider-btn prev" onclick="prevImage()" > ❮</button>
+        <button class="slider-btn next" onclick="nextImage()">❯</button>
+        <!-- BADGE -->
+        <div class="hero-badge">
+          <img id="schoolLogo" class="school-logo" alt="School Logo">
+          <div>
+            <div  style=" display:flex; gap:8px;align-items:center;" ><span class="dot"></span>
+              <strong id="schoolName"> សាខាទី១ </strong>
+            </div>
+            <small id="schoolText">សាលារៀន ពន្លឺ អាស៊ី</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="container features">
+      <div class="feature">
+        <div class="icon">ច</div>
+        <div>
+          <h3>ចំណេះដឹង</h3>
+          <p>
+            ចំណេះគឺជាព័ត៌មាននិងបទពិសោធន៍ដែលមនុស្សទទួលបានពីការរៀន និងអនុវត្ត។
+          </p>
+        </div>
+      </div>
+
+         <div class="feature">
+        <div class="icon">គ</div>
+        <div>
+          <h3>គុណភាព</h3>
+          <p>គុណភាពគឺជាលក្ខណៈល្អនិងសមត្ថភាពផ្ទាល់ខ្លួនដែលបង្ហាញពីតម្លៃរបស់មនុស្ស។</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="icon">ស</div>
+        <div>
+          <h3>សមត្ថភាព</h3>
+          <p> គឺជាលទ្ធភាពនិងជំនាញក្នុងការរៀនយល់ដឹងនិងអនុវត្តបានល្អ។</p>
+           </div>
+      </div>
+
+    </div>
+  </section>
+  
+<!-- ================= ABOUT SECTION ================= -->
+<div class="about-card">
+  <!-- LEFT SIDE -->
+  <div class="leftside">
+    <div class="logo-box">
+      <!-- YOUR IMAGE -->
+      <img src="../src/Banner/pic las.jpg" alt="School Image">
+      <div class="logo-overlay">
+      </div>
+    </div>
+  </div>
+  <!-- RIGHT SIDE -->
+  <div class="rightside">
+    <h1>
+      សាលារៀន <span>ពន្លឺ អាស៊ី</span>
+    </h1>
+
+    <div class="lineabout"></div>
+
+    <p>
+       សាលារៀន ពន្លឺ អាស៊ី (LAS) ត្រូវបានបង្កើតឡើងក្នុងគោលបំណងជាស្ថាប័នឧត្តមសិក្សារបស់រាជរដ្ឋាភិបាលកម្ពុជា ។ <br>
+
+      ដើម្បីបញ្ជូន និងបណ្តុះបណ្តាលឱ្យមានកម្លាំងពលកម្មជាតិស្មើនឹងស្តង់ដារអន្តរជាតិ និងឆ្លើយតបនឹងតម្រូវការអភិវឌ្ឍន៍សេដ្ឋកិច្ច និងសង្គម.....
+    </p>
+
+    <!-- BUTTONS -->
+    <div class="btn-group">
+      <a href="../index.html/about.html" class="btnabout btn-primary">
+        អានព័ន៌មានលម្អិត
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===============================
+     PROGRAM SECTION
+================================= -->
+
+<section class="program-section">
+
+  <div class="program-container">
+
+    <!-- LEFT -->
+
+    <div class="program-content">
+
+      <div class="program-badge">
+        <i class="fa-solid fa-graduation-cap"></i>
+        កម្មវិធីសិក្សា ឆ្នាំ២០២៦
+      </div>
+
+      <h2>
+        កម្មវិធីសិក្សា
+        <span>នឹងកាលវិភាគសិក្សា</span>
+      </h2>
+
+      <p>
+        យើងផ្តល់ជូនកម្មវិធីសិក្សា
+        ប្រកបដោយគុណភាព
+        ជាមួយគ្រូបង្រៀនមានបទពិសោធន៍
+        និងបរិយាកាសសិក្សាទំនើប
+        ដើម្បីអភិវឌ្ឍសមត្ថភាពសិស្ស
+        ទាំងផ្នែកចំណេះដឹង និងជំនាញអនុវត្ត។
+      </p>
+
+      <!-- FEATURES -->
+
+      <div class="program-features">
+
+        <div class="program-card">
+
+          <div class="program-icon">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+
+          <div>
+            <h4>ម៉ោងសិក្សា</h4>
+            <span>មានវេនព្រឹក • រសៀល • ល្ងាច</span>
+          </div>
+
+        </div>
+
+        <div class="program-card">
+
+          <div class="program-icon">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+
+          <div>
+            <h4>មុខវិជ្ជាសំខាន់</h4>
+            <span>ខ្មែរ • អង់គ្លេស • គណិតវិទ្យា</span>
+          </div>
+
+        </div>
+
+        <div class="program-card">
+
+          <div class="program-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+
+          <div>
+            <h4>វគ្គបំប៉នបន្ថែម</h4>
+            <span>កុំព្យូទ័រ • ភាសាចិន • អង់គ្លេស</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- BUTTONS -->
+
+      <div class="program-buttons">
+
+        <a href="../subject/program.html" class="program-btn">
+          មើលកាលវិភាគ
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="#" class="program-btn-secondary">
+          <i class="fa-solid fa-phone"></i>
+          ទំនាក់ទំនង
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="program-preview">
+
+      <div class="program-preview-card">
+
+        <!-- HEADER -->
+
+        <div class="program-header">
+
+          <div class="program-header-left">
+
+            <div class="program-big-icon">
+              <i class="fa-solid fa-school"></i>
+            </div>
+
+            <div>
+              <h3>កាលវិភាគសិក្សា</h3>
+              <span>ឆ្នាំសិក្សា ២០២៦</span>
+            </div>
+
+          </div>
+
+          <div class="program-live">
+            ● កំពុងបើកទទួលសិស្ស
+          </div>
+
+        </div>
+
+        <!-- TIMES -->
+
+        <div class="program-time">
+
+          <div class="program-time-icon">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+
+          <div>
+            <h4>វេនព្រឹក</h4>
+            <span>៧:៣០ - ១០:៣០</span>
+          </div>
+
+        </div>
+
+        <div class="program-time">
+
+          <div class="program-time-icon">
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+
+          <div>
+            <h4>វេនរសៀល</h4>
+            <span>១:០០ - ៤:០០</span>
+          </div>
+
+        </div>
+
+        <div class="program-time">
+
+          <div class="program-time-icon">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+
+          <div>
+            <h4>វេនល្ងាច</h4>
+            <span>៤:៣០ - ៨:០០</span>
+          </div>
+
+        </div>
+
+        <!-- SUBJECTS -->
+
+        <h4 class="program-title">
+          មុខវិជ្ជាសិក្សា
+        </h4>
+
+        <div class="program-tags">
+
+          <span>ខ្មែរ</span>
+          <span>អង់គ្លេស</span>
+          <span>គណិត</span>
+          <span>កុំព្យូទ័រ</span>
+          <span>ភាសាចិន</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+ <!-- Endprogram -->
+
+<!-- NEWS -->
+     <div class="container">
+           <div class="section-head">
+      <h2 style="color: black; size: 18px;">ព័ត៌មាន & ព្រឹត្តិការណ៍</h2>
+    </div>
+        <div class="cards-grid">
+        <!-- Cards1 -->
+          <article class="card" data-category="news">
+                <div class="card-img">
+                    <img src="../src/Banner/img saxa7/fornt shcool.jpg" alt="Conference">
+                    <span class="badge">ព័ត៌មាន & ព្រឹត្តិការណ៍</span>
+                    <button class="like-btn" onclick="toggleLike(this)">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <i class="far fa-calendar"></i>
+                        ឧសភា​ ទី២៣ ឆ្នាំ២០២៦
+                    </div>
+                    <h2 class="card-title">ការដាក់អោយប្រើប្រាស់សាខាទី៧</h2>
+                    <p class="card-desc" style=" word-spacing: 0px; letter-spacing: 0px;">អបអរសាទរពិធីសម្ពោធបើកដំណើរការការបង្រៀន ទីតាំងទី ៧ នៃសាលារៀន ពន្លឺ អាស៊ី🤝ព្រមទាំងពិធីចុះអនុស្សរណៈយោគយល់គ្នា (MoU) នៃកិច្ចសហប្រតិបត្តិការរវាង.....</p>
+                    <a href="../news/news card1.html" class="card-link">អានបន្ត<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+      <!-- Cards2 -->
+            <article class="card" data-category="news">
+                <div class="card-img">
+                    <img src="../src/Banner/bossjpg.jpg" alt="Conference">
+                    <span class="badge">ព័ត៌មាន & ព្រឹត្តិការណ៍</span>
+                    <button class="like-btn" onclick="toggleLike(this)">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <i class="far fa-calendar"></i>
+                        ទី១​ ខែកក្ដដា ឆ្នាំ២០២៦
+                    </div>
+                    <h2 class="card-title">ការប្រជុំអំពីការបិទវគ្គ១បើកវគ្គ២</h2>
+                    <p class="card-desc">ការ​ប្រជុំ​បិទ​វគ្គ​១​បើក​វគ្គ​២​ដោយ​លោក​នាយក​លោក​គ្រូ​ ​ព្រុំ សុវណ្ណ រួម​ជាមួយ​នឹង​បុគ្គលិក ទាំង៦​ទីតាំង​សាខា​ដែល​មាន​បុគ្គលិក​ចូល​រួម​ចំនួន ៨០​នាក់​ជាង...</p>
+                    <a href="../news/news card2.html" class="card-link">អានបន្ត<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+    <!-- Cards3-->
+            <article class="card" data-category="featured">
+                <div class="card-img">
+                    <img src="../src/Banner/ttul sinhabat.jpg" alt="Research">
+                    <span class="badge">ព័ត៌មាន & ព្រឹត្តិការណ៍</span>
+                    <button class="like-btn" onclick="toggleLike(this)">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <i class="far fa-calendar"></i>
+                        តុលា​ ទី១៦ ឆ្នាំ២០២៥
+                    </div>
+                    <h2 class="card-title">កម្មវិធីចែកសញ្ញាបត្រដល់សិស្ស</h2>
+                    <p class="card-desc">សាលារៀន ពន្លឺអាស៊ី សាខាទី៦
+                      ភូមិជាចលិច ឃុំជាច ស្រុកកំចាយមារ ខេត្តព្រៃវែង...បានរៀបចំពិធី ចែកវិញ្ញាបនបត្រ និងលិខិតសរសើរសិស្សឆ្នើម វគ្គ៣ ដើម្បី...</p>
+                    <a href="../news/news card3.html" class="card-link">អានបន្ត <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+</div>
+
+<!-- Gallery slider -->
+  <section id="gallery">
+    <div class="section-title">
+    
+    </div>
+    <div class="slider" aria-label="វិចិត្រសាលរូបភាព">
+      <div class="slides">
+        <!-- 4 originals -->
+        <img src="../src/Banner/Chairs LAS.jpg" alt="វិចិត្រសាល ១">
+        <img src="../src/Banner/join.jpg" alt="វិចិត្រសាល ២">
+        <img src="../src/Banner/bglas (2).jpg" alt="វិចិត្រសាល ៣">
+        <img src="../src/Banner/pic las.jpg" alt="វិចិត្រសាល ៤">
+         <!-- 4 originals -->
+         <img src="../src/Banner/Chairs LAS.jpg" alt="វិចិត្រសាល ១">
+        <img src="../src/Banner/join.jpg" alt="វិចិត្រសាល ២">
+        <img src="../src/Banner/bglas (2).jpg" alt="វិចិត្រសាល ៣">
+        <img src="../src/Banner/pic las.jpg" alt="វិចិត្រសាល ៤">
+         <!-- 4 originals -->
+        <img src="../src/Banner/Chairs LAS.jpg" alt="វិចិត្រសាល ១">
+        <img src="../src/Banner/join.jpg" alt="វិចិត្រសាល ២">
+        <img src="../src/Banner/bglas (2).jpg" alt="វិចិត្រសាល ៣">
+        <img src="../src/Banner/pic las.jpg" alt="វិចិត្រសាល ៤">
+       
+      </div>
+    </div>
+  </section>
+  
+<!-- Responsive Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- University Info -->
+    <div class="footer-section">
+      <img src="../src/logo/LOGO.gif" alt="University Logo" class="img">
+      <p><strong>សាលារៀនពន្លឺ អាស៊ី</strong></p>
+      <p>
+        ទីតាំងគោល <br>
+         ភូមិពោធិ៍ចិន្តា ឃុំស្វាយអន្ទរ ស្រុកស្វាយអន្ទរ ខេត្តព្រៃវែង 
+      </p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h4>ទំនាក់ទំនង</h4>
+      <p><i class="fas fa-phone"></i>+855 97 667 7400</p>
+      <p><i class="fas fa-envelope"></i> info@las.kh</p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-section">
+      <h4>តាមដានយើង</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© រក្សាសិទ្ធគ្រុប់យ៉ាង ២០២៦ សាលារៀនពន្លឺ អាស៊ី</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
+  <!-- JavaScript -->
+  <script src="/js/responsivebar.js"></script>
+  <script src="/js/news.js"></script>
+  <script src="/js/scripts.js"></script>
+<script src="../JS/slideheader.js"></script>
